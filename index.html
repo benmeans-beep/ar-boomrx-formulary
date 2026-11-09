@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aesthetic Record × BoomRx Formulary</title>
+<meta name="description" content="The Aesthetic Record × BoomRx integration formulary: 465 products from licensed 503A compounding pharmacies, organized by category.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Aesthetic Record × BoomRx Formulary">
+<meta property="og:description" content="465 products from licensed 503A compounding pharmacies, organized by category, with pricing for every strength.">
+<meta property="og:image" content="img/cover.jpg">
+<link rel="icon" href="img/boomrx.png">
+<style>
+  :root{
+    --boom-1:#BC2D29; --boom-2:#DE5533; --boom-3:#FFA102; --ar:#276EFA;
+    --navy:#0A1221; --ink:#1F2937; --muted:#6B7280; --page:#EEF2F9; --card:#FFFFFF; --line:#E5E7EB;
+    color-scheme: light;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--page);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .band{display:grid;grid-template-columns:1fr 1fr}
+  .band > div{display:flex;align-items:center;justify-content:center;padding:34px 16px}
+  .band .boom{background:var(--boom-2);background-image:linear-gradient(135deg,var(--boom-1) 0%,var(--boom-2) 45%,var(--boom-3) 100%)}
+  .band .ar{background:var(--ar)}
+  .band img{display:block;height:auto}
+  .band .boom img{width:120px}
+  .band .ar img{width:170px}
+  main{max-width:1100px;margin:0 auto;padding:40px 20px 56px}
+  .hero{text-align:center;max-width:640px;margin:0 auto}
+  .pill{display:inline-block;font-size:13px;font-weight:700;background:#fff;border-radius:999px;padding:7px 16px;color:var(--navy)}
+  .pill .b{color:var(--boom-2)} .pill .a{color:var(--ar)}
+  h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(34px,6vw,52px);line-height:1.08;letter-spacing:-.5px;color:var(--navy);margin:18px 0 0}
+  .lede{font-size:17px;line-height:1.6;color:#4B5563;margin:14px auto 0}
+  .stats{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:26px 0 0}
+  .stat{background:#fff;border-radius:14px;padding:14px 22px;min-width:120px;text-align:center}
+  .stat b{display:block;font-size:28px;color:var(--navy)}
+  .stat span{font-size:12.5px;color:var(--muted)}
+  .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;border-radius:999px;padding:13px 24px}
+  .btn.primary{color:#fff;background:var(--boom-2);background-image:linear-gradient(135deg,var(--boom-1) 0%,var(--boom-2) 45%,var(--boom-3) 100%)}
+  .btn.secondary{color:var(--ar);background:#fff;border:1.5px solid var(--ar)}
+  .btn:focus-visible{outline:3px solid var(--ar);outline-offset:3px}
+  .viewer{margin:40px auto 0;background:var(--card);border-radius:18px;padding:12px;box-shadow:0 10px 30px rgba(10,18,33,.10)}
+  .viewer object,.viewer iframe{display:block;width:100%;height:min(1100px,82vh);border:0;border-radius:10px;background:#f3f4f6}
+  .mobile-cover{display:none;text-decoration:none}
+  .mobile-cover img{display:block;width:100%;height:auto;border-radius:12px}
+  .mobile-cover span{display:block;text-align:center;font-weight:700;color:var(--ar);padding:14px 0 4px}
+  .contact{margin:40px auto 0;max-width:640px;text-align:center;background:#fff;border-radius:16px;padding:24px 22px}
+  .contact h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:22px;margin:0;color:var(--navy)}
+  .contact p{margin:8px 0 0;color:#4B5563;line-height:1.6;font-size:15px}
+  .contact .row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px}
+  footer{text-align:center;font-size:12.5px;color:var(--muted);padding:0 20px 36px}
+  footer b.b{color:var(--boom-2)} footer b.a{color:var(--ar)}
+  .split{height:5px;display:grid;grid-template-columns:1fr 1fr}
+  .split i{display:block} .split i:first-child{background-image:linear-gradient(90deg,var(--boom-1),var(--boom-2),var(--boom-3))} .split i:last-child{background:var(--ar)}
+  @media (max-width:760px){
+    .band > div{padding:24px 12px}
+    .band .boom img{width:88px} .band .ar img{width:124px}
+    main{padding-top:30px}
+    .stats{gap:8px;flex-wrap:nowrap}
+    .stat{min-width:0;flex:1;padding:12px 6px}
+    .stat b{font-size:24px}
+    .viewer{padding:0;background:none;box-shadow:none}
+    .viewer object{display:none}
+    .mobile-cover{display:block}
+  }
+</style>
+</head>
+<body>
+  <header class="band" aria-label="BoomRx and Aesthetic Record">
+    <div class="boom"><img src="img/boomrx.png" alt="BoomRx"></div>
+    <div class="ar"><img src="img/aesthetic-record.png" alt="Aesthetic Record"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="pill"><span class="b">BoomRx</span> &nbsp;×&nbsp; <span class="a">Aesthetic Record</span></span>
+      <h1>Integration Formulary</h1>
+      <p class="lede">Every product available to Aesthetic Record practices through BoomRx, from our network of licensed 503A compounding pharmacies, organized by category with pricing for every strength.</p>
+      <div class="stats" aria-label="Formulary at a glance">
+        <div class="stat"><b>465</b><span>Products</span></div>
+        <div class="stat"><b>13</b><span>Categories</span></div>
+        <div class="stat"><b>51</b><span>States</span></div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="aesthetic-record-boomrx-formulary.pdf" target="_blank" rel="noopener">Open the formulary (PDF)</a>
+        <a class="btn secondary" href="aesthetic-record-boomrx-formulary.pdf" download>Download</a>
+      </div>
+    </section>
+
+    <section class="viewer" aria-label="Formulary">
+      <object data="aesthetic-record-boomrx-formulary.pdf#view=FitH" type="application/pdf" aria-label="Aesthetic Record × BoomRx Formulary">
+        <a class="mobile-cover" href="aesthetic-record-boomrx-formulary.pdf" target="_blank" rel="noopener" style="display:block">
+          <img src="img/cover.jpg" alt="Formulary cover"><span>Open the formulary →</span>
+        </a>
+      </object>
+      <a class="mobile-cover" href="aesthetic-record-boomrx-formulary.pdf" target="_blank" rel="noopener">
+        <img src="img/cover.jpg" alt="Aesthetic Record × BoomRx Formulary cover"><span>Tap to open the full formulary →</span>
+      </a>
+    </section>
+
+    <section class="contact">
+      <h2>Questions about a product?</h2>
+      <p>Your BoomRx Account Manager, Will Means, can help with orders, documentation such as COAs, and account questions.</p>
+      <div class="row">
+        <a class="btn primary" href="https://calendar.app.google/1KR1re1eYT5T4Ewu8" target="_blank" rel="noopener">Book a call with Will</a>
+        <a class="btn secondary" href="mailto:Will.means@boomrx.com">Email Will</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="split"><i></i><i></i></div>
+  <footer><p><b class="b">BoomRx</b> × <b class="a">Aesthetic Record</b> · Licensed 503A compounding pharmacies, one portal</p></footer>
+</body>
+</html>
